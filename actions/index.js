@@ -44,6 +44,7 @@ function blurCell () {
 
 function removeRow (ev) {
   ev.preventDefault();
+  console.log("removing row")
   if(!this.state.table.length > 1){
     console.log("do not do that")
   }
