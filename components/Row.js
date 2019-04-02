@@ -11,3 +11,5 @@ const Row = (props) => {
     </tr>
   )
 }
+
+export default Row
