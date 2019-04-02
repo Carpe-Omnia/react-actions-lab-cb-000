@@ -9,8 +9,10 @@ export default class Table extends React.Component {
       <table className='table' onBlur={this.props.onBlur}>
         <tbody>
           this.props.cells.map(function(row){
+              return (
                 <Row row={row} onChange={this.props.onChange} onFocus={this.props.onFocus} />
-              }, this)
+              )
+          }, this)
         </tbody>
       </table>
     )
