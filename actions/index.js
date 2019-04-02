@@ -18,7 +18,6 @@ function addRow (ev) {
   console.log("adding row")
   ev.preventDefault();
   var temp = this.state.table ;
-  console.log(temp) ;
   var times
   !!temp[0] ? times = temp[0].length : times = 1
   var temp2 = [] ;
@@ -26,7 +25,6 @@ function addRow (ev) {
     temp2.push(' ')
   }
   temp.push(temp2) ;
-  console.log(temp) ;
   this.setState({
     table: temp
   })
