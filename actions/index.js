@@ -25,8 +25,9 @@ function changeCell (rowIndex, columnIndex, event) {
   this.setState({
     table: newTable
   })
+  event.preventDefault();
   */
-  //event.preventDefault();
+  
 }
 
 function focusCell (rowIndex, columnIndex) {
