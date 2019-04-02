@@ -8,7 +8,7 @@ const Table = (props) => {
   return (
     <table className='table' onBlur={props.onBlur}>
       <tbody>
-        {rows()}
+        {rows}
       </tbody>
     </table>
   )
