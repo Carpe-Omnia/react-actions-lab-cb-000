@@ -11,7 +11,7 @@ export default class Cell extends React.Component {
     var columnIndex = this.props.columnIndex ;
     return (
       <td className='cell'>
-        <input value={this.props.cell} onFocus={this.props.doFocus} onChange={ev => this.props.doChange(rowIndex, columnIndex, ev)} />
+        <input value={this.props.cell} onFocus={this.props.doFocus(rowIndex, columnIndex)} onChange={ev => this.props.doChange(rowIndex, columnIndex, ev)} />
       </td>
     )
   }
