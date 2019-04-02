@@ -7,7 +7,7 @@ export default class Table extends React.Component {
   constructor(props){
     super(props);
   }
-  rows = () => {
+  rows(){
     return (
       this.props.cells.map((row) =>{
         <Row row={row} onChange={this.props.onChange} onFocus={this.props.onFocus} />
