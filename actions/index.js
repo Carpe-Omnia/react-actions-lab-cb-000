@@ -19,14 +19,13 @@ function addRow (ev) {
   ev.preventDefault();
 }
 
-function changeCell (rowIndex, columnIndex, ev) {
-  var key = ev.key ;
+function changeCell (rowIndex, columnIndex, event) {
   var newTable = this.state.table ;
-  newTable[rowIndex][columnIndex] += key ;
+  newTable[rowIndex][columnIndex] += event.key ;
   this.setState({
     table: newTable
   })
-  ev.preventDefault();
+  event.preventDefault();
 }
 
 function focusCell (rowIndex, columnIndex) {
