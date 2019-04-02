@@ -47,7 +47,9 @@ function changeCell (rowIndex, columnIndex, ev) {
 
 function focusCell (rowIndex, columnIndex) {
   console.log(`${rowIndex} - ${columnIndex}`)
-  document.getElementById('focused').innerHTML = (`${rowIndex} - ${columnIndex}`)
+  this.setState({
+    focused: `${rowIndex} - ${columnIndex}`
+  })
 }
 
 function blurCell () {
