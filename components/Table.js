@@ -18,7 +18,7 @@ export default class Table extends React.Component {
     return (
       <table className='table' onBlur={this.props.onBlur}>
         <tbody>
-          {rows}
+          {rows()}
         </tbody>
       </table>
     )
