@@ -38,11 +38,6 @@ export default class Spreadsheet extends React.Component {
         <Table cells={this.state.table} doBlur={this.handleBlur} doFocus={this.handleFocus} doChange={this.handleChange} />
 
         <div className='spreadsheet__focused' id="focused">
-        {
-          this.state.focused
-          ? {this.state.focused}
-          : null
-        }
         </div>
       </div>
     );
