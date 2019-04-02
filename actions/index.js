@@ -61,7 +61,7 @@ function removeColumn (ev) {
   else{
     var temp = this.state.table.map(function(row){
       return(
-        row.slice(-1, 1)
+        row.slice(0, 1)
       )
     })
     this.setState({table: temp})
