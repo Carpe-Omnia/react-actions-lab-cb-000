@@ -3,18 +3,11 @@
 import React from 'react';
 import Cell from './Cell';
 
-export default class Row extends React.Component {
-  render () {
-    return(
-      <tr className="row">
-        {
-          this.props.row.map(function(cell, index){
-            return (
-              <Cell key={index} cell={cell} onChange={this.props.onChange.bind(null, columnIndex)} onFocus={this.props.onFocus.bind(null, columnIndex)} />
-            )
-          })
-        }
-      </tr>
-    )
-  }
+const Row = (props) => {
+  var cells = props.row.map(function(cell, index){return (<Cell key={index} cell={cell} onChange={props.onChange.bind(null, columnIndex)} onFocus={props.onFocus.bind(null, columnIndex)} />)})
+  return(
+    <tr className="row">
+      {cells}
+    </tr>
+  )
 }
