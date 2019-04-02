@@ -24,7 +24,6 @@ function changeCell (rowIndex, columnIndex, ev) {
 }
 
 function focusCell (rowIndex, columnIndex) {
-  ev.preventDefault();
   this.setState({
     focused: [rowIndex, columnIndex]
   })
