@@ -31,7 +31,7 @@ function addRow (ev) {
 }
 
 function changeCell (rowIndex, columnIndex, event) {
-  console.log(event) ; 
+  console.log(event) ;
   console.log(event.key) ;
   console.log(rowIndex) ;
   console.log(columnIndex) ;
@@ -40,7 +40,7 @@ function changeCell (rowIndex, columnIndex, event) {
     table: newTable
   })
   event.preventDefault();
-  
+
 
 }
 
