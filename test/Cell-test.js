@@ -6,6 +6,7 @@ import Cell from '../components/Cell';
 import { shallow } from 'enzyme';
 
 describe('<Cell />', function () {
+  /*
   it('should render <td />', function () {
     expect(shallow(<Cell />).type()).toBe('td');
   });
@@ -37,4 +38,5 @@ describe('<Cell />', function () {
     const wrapper = shallow(<Cell onFocus={onFocus}/>);
     expect(wrapper.children().first().prop('onFocus')).toBe(onFocus);
   });
+  */
 });
