@@ -7,6 +7,7 @@ import Row from '../components/Row';
 import { shallow } from 'enzyme';
 
 describe('<Table />', function () {
+  /*
   const table = [['0-0'], ['1-0'], ['2-0']];
 
   it('should render <table />', function () {
@@ -101,4 +102,5 @@ describe('<Table />', function () {
       expect(row.key()).toBe(String(rowIndex));
     });
   });
+  */
 });
