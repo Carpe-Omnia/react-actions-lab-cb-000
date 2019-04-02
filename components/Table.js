@@ -8,11 +8,8 @@ export default class Table extends React.Component {
     return (
       <table className='table' onBlur={this.props.onBlur}>
         <tbody>
-          this.props.cells.map(function(row, index){
-              return (
+          this.props.cells.map((row, index) =>
                 <Row onChange={this.props.onChange.bind(null, rowIndex)} onFocus={this.props.onFocus.bind(null, index)} />
-              )
-            }
           )
         </tbody>
       </table>
