@@ -9,9 +9,9 @@ export default class Table extends React.Component {
   }
   rows(){
     return (
-      this.props.cells.map((row) =>{
+      this.props.cells.map(function(row){
         <Row row={row} onChange={this.props.onChange} onFocus={this.props.onFocus} />
-      }
+      }, this
     )
   }
   render () {
