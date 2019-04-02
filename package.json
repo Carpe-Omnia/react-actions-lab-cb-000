@@ -45,6 +45,7 @@
     "node-pre-gyp": "^0.6.39",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
+    "react-scripts": "^2.1.8",
     "react-test-renderer": "^15.5.4"
   }
 }
