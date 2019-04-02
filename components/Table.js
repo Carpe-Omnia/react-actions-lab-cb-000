@@ -9,7 +9,9 @@ export default class Table extends React.Component {
       <table className='table' onBlur={this.props.onBlur}>
         <tbody>
           this.props.cells.map(function(row, index) => {
-              <Row onChange={this.props.onChange.bind(null, rowIndex)} onFocus={this.props.onFocus.bind(null, index)} />
+              return (
+                <Row onChange={this.props.onChange.bind(null, rowIndex)} onFocus={this.props.onFocus.bind(null, index)} />
+              )
             }
           )
         </tbody>
