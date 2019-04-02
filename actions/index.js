@@ -32,7 +32,7 @@ function addRow (ev) {
 
 function changeCell (rowIndex, columnIndex, event) {
   console.log(event) ;
-  console.log(event.key) ;
+  console.log(event.charCode) ;
   console.log(rowIndex) ;
   console.log(columnIndex) ;
   var newTable = this.state.table ;
