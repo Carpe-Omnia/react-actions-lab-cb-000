@@ -17,6 +17,13 @@ function addColumn (ev) {
 function addRow (ev) {
   console.log("adding row")
   ev.preventDefault();
+  var temp = this.state.table ;
+  var length = temp[0].length ;
+  var temp2 = new Array(length) ;
+  temp.push(temp2) ;
+  this.setState({
+    table: temp
+  })
 }
 
 function changeCell (rowIndex, columnIndex, event) {
