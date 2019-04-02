@@ -27,7 +27,7 @@ function changeCell (rowIndex, columnIndex, event) {
   })
   event.preventDefault();
   */
-  
+
 }
 
 function focusCell (rowIndex, columnIndex) {
