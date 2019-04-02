@@ -49,7 +49,8 @@ function removeRow (ev) {
     console.log("do not do that")
   }
   else{
-    var temp = this.state.table.slice(0, -1);
+    var temp = this.state.table
+    temp.pop() ;
     this.setState({table: temp})
   }
 }
