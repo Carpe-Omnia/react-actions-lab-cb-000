@@ -35,7 +35,7 @@ export default class Spreadsheet extends React.Component {
           <button onClick={event => this.removeRow(event)} >Remove Row</button>
         </div>
 
-        <Table cells={this.state.table} onBlur={this.handleBlur} onFocus={this.handleFocus} onChange={this.handleChange} />
+
 
         <div className='spreadsheet__focused'>
         </div>
@@ -43,3 +43,4 @@ export default class Spreadsheet extends React.Component {
     );
   }
 }
+//<Table cells={this.state.table} onBlur={this.handleBlur} onFocus={this.handleFocus} onChange={this.handleChange} />
