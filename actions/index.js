@@ -38,7 +38,7 @@ function changeCell (rowIndex, columnIndex, ev) {
   var temp = this.state.table ;
   temp[rowIndex][columnIndex] = ev.target.value
   this.setState({
-    table: newTable
+    table: temp
   })
   ev.preventDefault();
 
