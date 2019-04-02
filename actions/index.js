@@ -18,9 +18,8 @@ function addRow (ev) {
   //console.log("adding row")
   ev.preventDefault();
   var temp = this.state.table ;
-  var times = temp[0].length ;
-  if(times === 0){times = 1}
-  //console.log(length) ;
+  var times
+  !!temp[0] ? times = temp[0].length : times = 1
   var temp2 = [] ;
   for(var i = 0; i < times; i++){
     temp2.push(' ')
