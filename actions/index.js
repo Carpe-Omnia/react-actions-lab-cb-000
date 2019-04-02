@@ -47,7 +47,7 @@ function changeCell (rowIndex, columnIndex, ev) {
 
 function focusCell (rowIndex, columnIndex) {
   console.log(`${rowIndex} - ${columnIndex}`)
-  document.getElementsByClassName('spreadsheet_focused').innerHTML(`${rowIndex} - ${columnIndex}`)
+  document.getElementById('focused').innerHTML = (`${rowIndex} - ${columnIndex}`)
 }
 
 function blurCell () {
