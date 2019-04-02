@@ -15,18 +15,18 @@ function addColumn (ev) {
 }
 
 function addRow (ev) {
-  //console.log("adding row")
+  console.log("adding row")
   ev.preventDefault();
   var temp = this.state.table ;
+  console.log(temp) ;
   var times
   !!temp[0] ? times = temp[0].length : times = 1
   var temp2 = [] ;
   for(var i = 0; i < times; i++){
     temp2.push(' ')
   }
-  //console.log(temp2) ;
   temp.push(temp2) ;
-  //console.log(temp) ;
+  console.log(temp) ;
   this.setState({
     table: temp
   })
