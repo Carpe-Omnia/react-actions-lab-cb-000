@@ -21,7 +21,6 @@ export default class Spreadsheet extends React.Component {
   }
 
   render () {
-    focus = this.state.focused
     return (
       <div className='spreadsheet'>
         <h1>My little spreadsheet</h1>
@@ -39,7 +38,7 @@ export default class Spreadsheet extends React.Component {
         <Table cells={this.state.table} doBlur={this.handleBlur} doFocus={this.handleFocus} doChange={this.handleChange} />
 
         <div className='spreadsheet__focused'>
-          {focus}
+          {this.state.focused}
         </div>
       </div>
     );
