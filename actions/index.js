@@ -55,13 +55,13 @@ function removeRow (ev) {
 
 function removeColumn (ev) {
   ev.preventDefault();
-  if(!this.state.table[-1].length > 1){
+  if(!this.state.table[0].length > 1){
     console.log("do not do that")
   }
   else{
     var temp = this.state.table.map(function(row){
       return(
-        row.slice(0, -1)
+        row.slice(-1, 1)
       )
     })
     this.setState({table: temp})
