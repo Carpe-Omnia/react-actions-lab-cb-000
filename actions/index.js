@@ -33,6 +33,7 @@ function addRow (ev) {
 function changeCell (rowIndex, columnIndex, ev) {
   console.log(ev) ;
   console.log(ev.charCode) ;
+  console.log(ev.target.value)
   console.log(rowIndex) ;
   console.log(columnIndex) ;
   var newTable = this.state.table ;
