@@ -60,10 +60,9 @@ function removeColumn (ev) {
     console.log("do not do that")
   }
   else{
-    var temp = this.state.table.map(function(row){
-      return(
-        row.slice(0, 1)
-      )
+    var temp = this.state.table ;
+    temp.forEach(function(row){
+      row.pop() ;
     })
     this.setState({table: temp})
   }
