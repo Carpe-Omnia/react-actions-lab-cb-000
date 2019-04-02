@@ -33,13 +33,6 @@ function addRow (ev) {
 function changeCell (rowIndex, columnIndex, event) {
   console.log(event) ;
   console.log(event.key) ;
-  /*var newTable = this.state.table ;
-  newTable[rowIndex][columnIndex] += event.key ;
-  this.setState({
-    table: newTable
-  })
-  event.preventDefault();
-  */
 
 }
 
