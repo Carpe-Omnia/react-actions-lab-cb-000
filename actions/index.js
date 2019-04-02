@@ -20,6 +20,12 @@ function addRow (ev) {
 }
 
 function changeCell (rowIndex, columnIndex, ev) {
+  var key = ev.key ;
+  var newTable = this.state.table ;
+  newTable[rowIndex][columnIndex] += key ;
+  this.setState({
+    table: newTable
+  })
   ev.preventDefault();
 }
 
