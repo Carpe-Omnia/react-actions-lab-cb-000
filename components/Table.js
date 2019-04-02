@@ -8,7 +8,7 @@ const Table = (props) => {
     return (
       this.props.cells.map(function(row){
         <Row row={row} onChange={this.props.onChange} onFocus={this.props.onFocus} />
-      }, this
+      }, this)
     )
   }
   return (
