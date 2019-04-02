@@ -9,7 +9,7 @@ export default class Cell extends React.Component {
   render () {
     return (
       <td className='cell'>
-        <input value={this.props.cell} onFocus={this.props.doFocus} onChange={this.props.doChange} />
+        <input value={this.props.cell} onFocus={this.props.doFocus} onChange={event => this.props.doChange(event)} />
       </td>
     )
   }

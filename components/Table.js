@@ -4,7 +4,7 @@ import React from 'react';
 import Row from './Row';
 
 const Table = (props) => {
-  var rows = props.cells.map(function(row){ return (<Row row={row} doChange={props.doChange} doFocus={props.doFocus} />) })
+  var rows = props.cells.map(function(row, index){ return (<Row row={row} index={index} doChange={props.doChange} doFocus={props.doFocus} />) })
   return (
     <table className='table' onBlur={props.doBlur}>
       <tbody>
