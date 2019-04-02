@@ -5,12 +5,12 @@ import Row from './Row';
 
 const Table = (props) => {
   var rows = {
-      this.props.cells.map(function(row){
-        <Row row={row} onChange={this.props.onChange} onFocus={this.props.onFocus} />
-      }, this)
+      props.cells.map(function(row){
+        <Row row={row} onChange={.props.onChange} onFocus={props.onFocus} />
+      })
   }
   return (
-    <table className='table' onBlur={this.props.onBlur}>
+    <table className='table' onBlur={props.onBlur}>
       <tbody>
         {rows()}
       </tbody>
